@@ -763,6 +763,7 @@
           <configuration>
             <protocVersion>${protoc.version}</protocVersion>
             <includeStdTypes>true</includeStdTypes>
+            <protocCommand>/Users/huanwei/git_files/github/protobuf-archive/protobuf-3.21.5/src/protoc</protocCommand>
           </configuration>
         </plugin>
       </plugins>
