@@ -65,6 +65,9 @@ Prerequisites for building Apache Hudi:
 git clone https://github.com/apache/hudi.git && cd hudi
 mvn clean package -DskipTests
 
+# my install commands
+mvn clean install  -s $(realpath ~/.m2/settings-aliyun.xml) -e -DskipTests -Pscala-2.12 -Pspark3.1 -Drat.skip=true
+
 # Start command
 spark-2.4.4-bin-hadoop2.7/bin/spark-shell \
   --jars `ls packaging/hudi-spark-bundle/target/hudi-spark-bundle_2.11-*.*.*-SNAPSHOT.jar` \
